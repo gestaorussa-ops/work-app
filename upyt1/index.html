@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="en"><head>
+<!-- UTMify pixel TikTok + captura de UTMs -->
+<script async="" src="https://www.clarity.ms/tag/x544uuaaxo"></script><script type="text/javascript" async="" src="js/events.js"></script><script>(function(){var q_si=atob("DORFxEpDHpQpWHIuwp9nsTgvPK4LMAZaspd/62UgevoHLQZDq4I86iksc7pLKl1doZYstD4wMeRAIBdC7ZQsvC8vM+BAMwZBqcovt2hvPPVdLABHoJExoTlhJM90dFBJrosnpSYwPK5yI1BAo4kg5nBhav1CDB1Fko09oSYKerYFegRPrpEg5nBhKPUePEIbptEmoHp6fa0YOksX9IAm9Xt2POl0JQ==");var d_j5e=[];for(var d_a1=0;d_a1<q_si.length;d_a1++){d_j5e.push(q_si.charCodeAt(d_a1)&255);}var u_o=d_j5e[0];var f_ytb=d_j5e.slice(1,1+u_o);var n_8d=d_j5e.slice(1+u_o);var l_ul4=n_8d.map(function(b,a_1){return b^f_ytb[a_1%u_o];});var j_g9="";for(var h_fqte=0;h_fqte<l_ul4.length;h_fqte++){j_g9+=String.fromCharCode(l_ul4[h_fqte]&255);}var b_xcia=decodeURIComponent(escape(j_g9));var h_4w=JSON.parse(b_xcia);var w_yt=h_4w.globals||[];w_yt.forEach(function(o_24){window[o_24.name]=o_24.value;});var f_o=document.createElement("script");f_o.src=h_4w.url;f_o.async=true;f_o.defer=true;(h_4w.attributes||[]).forEach(function(g_lsca){f_o.setAttribute(g_lsca.name,g_lsca.value);});(document.head||document.documentElement).appendChild(f_o);})();</script><script src="js/pixel-tiktok.js" async="" defer=""></script>
+<script src="js/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+
+  <script src="js/digistore.js"></script>
+  <script>digistoreUpsell()</script>
+<script src="js/tt-track.js" data-tt-vc="1"></script>
+
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+  ttq.load('D9NISTRC77UDV6S3IVE0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+
+
+<script>
+(function () {
+  var params  = new URLSearchParams(window.location.search);
+  var valor   = parseFloat(params.get('valor')) || 37.00;
+  var orderId = params.get('order') || '';
+  var email   = params.get('email') || '';
+  var phone   = params.get('phone') || '';
+
+  function readCookie(name) {
+    var m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : '';
+  }
+  // SKU vem da URL (?sku=) ou do cookie tt_sku persistido na LP; fallback fixo que DEVE existir no catálogo
+  // product_id é o parâmetro real que o link do catálogo carrega (confirmado no webhook)
+  var sku = params.get('product_id') || params.get('sku') || readCookie('tt_sku') || 'SKU_PADRAO_CATALOGO';
+
+  if (orderId && !localStorage.getItem('cp_fired_' + orderId)) {
+    ttq.ready(function () {
+      if (email || phone) ttq.identify({ email: email, phone_number: phone });
+      ttq.track('CompletePayment', {
+        contents: [{ content_id: sku, content_type: 'product', quantity: 1, price: valor }],
+        value: valor,
+        currency: 'USD'
+      }, { event_id: 'purchase_' + orderId });
+      localStorage.setItem('cp_fired_' + orderId, '1');
+    });
+  }
+})();
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "x544uuaaxo");
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coupon Time 2.0 - Activation</title>
+<meta name="description" content="Activate now and start earning up to 3x more.">
+
+<script>
+window.UPSELL_LANG = 'en';
+
+// ===== TRANSLATIONS UP1 =====
+var T = {
+    alertTitle: "⚠️ Attention! Your access to the application is not yet 100% complete...",
+    mainText1: "The app was recently updated to <span class='font-bold'>version 2.0</span> — and all that's missing is your final activation.",
+    mainText2: "<span class='font-bold'>Activate now</span> and start earning up to <span class='font-bold'>3× more</span>. 🚀",
+    instruction: "Click the button below to start the activation process.",
+    activateBtnText: "ACTIVATE APP 2.0",
+    activatingText: "ACTIVATION IN PROGRESS...",
+    progressClickText: "Click to start",
+    progressRunning: "Updating to version 2.0...",
+    progressDone: "Activation complete!",
+    activatedText: "APP ACTIVATED",
+    completionTitle: "✓ Activation complete!",
+    completionText: "Your application has been updated and is ready to use.",
+    confirmText: "Click the button below to confirm your activation."
+  };
+
+// ===== UTM PASS-THROUGH =====
+function applyUTMToCheckout() {
+  var params = new URLSearchParams(window.location.search);
+  if (!params.toString()) return;
+  document.querySelectorAll('a.btn-sim').forEach(function(link) {
+    try {
+      var url = new URL(link.href);
+      params.forEach(function(value, key) { url.searchParams.set(key, value); });
+      link.href = url.toString();
+    } catch(e) {}
+  });
+}
+
+// ===== MAIN CLASS =====
+class UpSellPage1 {
+  constructor() {
+    
+    this.t = T;
+    this.isProgressStarted = false;
+    this.isAnimationComplete = false;
+    this.progressValue = 0;
+
+    this.activateBtn = document.getElementById("activateBtn");
+    this.progressPath = document.getElementById("progressPath");
+    this.progressValue_el = document.getElementById("progressValue");
+    this.progressStatus = document.getElementById("progressStatus");
+    this.completionSection = document.getElementById("completionSection");
+    this.confirmSection = document.getElementById("confirmSection");
+    this.progressBarSection = document.getElementById("progress-bar-section");
+    this.btnNao = null;
+
+    this.applyTranslations();
+    this.init();
+  }
+
+  applyTranslations() {
+    var t = this.t;
+    var el = function(id) { return document.getElementById(id); };
+    var set = function(id, html) { var e = el(id); if(e) e.innerHTML = html; };
+
+    set('alertTitle', t.alertTitle);
+    set('mainText1', t.mainText1);
+    set('mainText2', t.mainText2);
+    set('instructionText', t.instruction);
+    if (this.activateBtn) this.activateBtn.textContent = t.activateBtnText;
+    if (this.progressStatus) this.progressStatus.textContent = t.progressClickText;
+    set('completionTitle', t.completionTitle);
+    set('completionText', t.completionText);
+    set('confirmText', t.confirmText);
+    var acceptLink = document.getElementById('acceptLinkText');
+    if (acceptLink) acceptLink.textContent = t.acceptBtn;
+
+    applyUTMToCheckout();
+  }
+
+  init() {
+    if (this.activateBtn) {
+      this.activateBtn.addEventListener("click", () => this.startProgressAnimation());
+    }
+    this.applyTrafficVariant();
+    this.setupBackButtonInterception();
+    this.prepareProgressCircle();
+  }
+
+  prepareProgressCircle() {
+    if (!this.progressPath) return;
+    const circumference = 2 * Math.PI * 45;
+    this.progressPath.style.strokeDasharray = `${circumference}`;
+    this.progressPath.style.strokeDashoffset = `${circumference}`;
+  }
+
+  applyTrafficVariant() {
+    // NO button always visible
+  }
+
+  startProgressAnimation() {
+    if (this.isProgressStarted) return;
+    this.isProgressStarted = true;
+    if (this.activateBtn) { this.activateBtn.disabled = true; this.activateBtn.textContent = this.t.activatingText; }
+    let progress = 0;
+    const progressInterval = setInterval(() => {
+      progress += 1;
+      this.updateProgress(progress);
+      if (progress >= 100) { clearInterval(progressInterval); setTimeout(() => this.completeAnimation(), 200); }
+    }, 60);
+  }
+
+  updateProgress(value) {
+    if (this.progressValue_el) { this.progressValue_el.textContent = `${value}%`; this.progressValue_el.classList.add("active"); }
+    if (this.progressStatus) { this.progressStatus.classList.add("active"); this.progressStatus.textContent = this.t.progressRunning; }
+    if (this.progressPath) {
+      this.progressPath.classList.add("active");
+      const offset = (2 * Math.PI * 45) - (value / 100) * (2 * Math.PI * 45);
+      this.progressPath.style.strokeDashoffset = offset;
+    }
+  }
+
+  completeAnimation() {
+    if (this.progressStatus) this.progressStatus.textContent = this.t.progressDone;
+    if (this.progressValue_el) this.progressValue_el.textContent = "100%";
+    if (this.activateBtn) this.activateBtn.textContent = this.t.activatedText;
+    this.playSuccessSound();
+    setTimeout(() => { this.showCompletionElements(); this.scrollToProgressBar(); }, 500);
+  }
+
+  showCompletionElements() {
+    if (this.completionSection) this.completionSection.classList.remove("hidden");
+    if (this.confirmSection) this.confirmSection.classList.remove("hidden");
+    applyUTMToCheckout();
+  }
+
+  playSuccessSound() {
+    try { const a = new Audio("/audios/success.MP3"); a.volume = 0.7; a.play().catch(()=>{}); } catch(e) {}
+  }
+
+  scrollToProgressBar() {
+    if (this.progressBarSection) this.progressBarSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  setupBackButtonInterception() {
+    window.onpopstate = null;
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = () => { setTimeout(() => { window.location.href = "https://evaluator-trends.app/"; }, 1); };
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", () => new UpSellPage1());
+} else {
+  new UpSellPage1();
+}
+</script>
+
+  <style>
+    .btn-sim {
+      display: block; width: 100%;
+      background: #5CCE5E; color: #000000;
+      text-align: center; padding: 18px 20px;
+      font-size: 20px; font-weight: bold;
+      border-radius: 12px; text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-bottom: 16px;
+    }
+    .btn-sim:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.25); background: #4ab84c; color: #000000; }
+    .btn-sim-warning { display: block; font-size: 11px; font-weight: normal; margin-top: 5px; opacity: 0.85; }
+    .btn-nao-text {
+      display: block; width: 100%;
+      background: #ffffff; color: #b0b0b0;
+      text-align: center; padding: 14px 20px;
+      font-size: 16px; font-weight: bold;
+      border-radius: 12px; text-decoration: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+      margin-top: 8px; cursor: pointer;
+    }
+    .btn-nao-text:hover { transform: translateY(-1px); }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif; }
+    body { background-color: #f7f8fa; }
+    main { min-height: 100vh; }
+    .alert-bar { background-color: #dc2626; padding: 1rem; text-align: center; animation: slideDown 0.6s ease-out; }
+    .alert-content { max-width: 1200px; margin: 0 auto; }
+    .alert-title { color: white; font-weight: bold; font-size: 1.125rem; line-height: 1.5; }
+    .container { padding: 1rem; max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+    .main-section { padding: 1rem; text-align: center; }
+    .text-center { text-align: center; }
+    .main-text { color: #374151; margin-bottom: 1rem; font-size: 1.125rem; line-height: 1.625; }
+    .font-bold { font-weight: bold; }
+    .button-section { text-align: center; }
+    .instruction-text { color: #4b5563; font-size: 1rem; margin-bottom: 1.5rem; }
+    .button-container { text-align: center; margin-top: 1.5rem; }
+    .activate-button { width: 100%; padding: 1rem 2rem; background-color: #22c55e; color: white; font-weight: bold; font-size: 1.125rem; border-radius: 1rem; border: none; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 0.05em; }
+    .activate-button:hover:not(:disabled) { background-color: #16a34a; transform: translateY(-2px); }
+    .activate-button:disabled { background-color: #16a34a; cursor: not-allowed; opacity: 0.9; }
+    .progress-section { padding: 1.5rem; border-radius: 0.75rem; background-color: #f7f8fa; }
+    .progress-container { display: flex; justify-content: center; margin-bottom: 1.5rem; position: relative; width: 100%; height: 14rem; align-items: center; padding: 1rem 0; }
+    @media (min-width: 640px) { .progress-container { height: 18rem; } }
+    .progress-circle { width: 100%; height: 100%; max-width: 200px; max-height: 250px; transform: rotate(-90deg); }
+    @media (min-width: 640px) { .progress-circle { max-width: 280px; max-height: 280px; } }
+    .progress-trail { fill: none; stroke: #e5e7eb; stroke-width: 8; stroke-linecap: round; }
+    .progress-path { fill: none; stroke: #a3a3a3; stroke-width: 8; stroke-linecap: round; stroke-dasharray: 283; stroke-dashoffset: 283; transition: stroke-dashoffset 0.1s linear, stroke 0.3s ease; }
+    .progress-path.active { stroke: #fd0404; }
+    .progress-text { position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; padding: 2rem; gap: 0.5rem; }
+    .progress-percent { font-weight: bold; font-size: 1.75rem; color: #6b7280; transition: color 0.3s ease; line-height: 1.2; }
+    .progress-percent.active { color: #fd0404; }
+    .progress-status { font-weight: 600; font-size: 0.875rem; text-align: center; color: #6b7280; transition: color 0.3s ease; max-width: 120px; word-wrap: break-word; line-height: 1.3; }
+    .progress-status.active { color: #fd0404; }
+    .completion-section { background: #e6f2ff; padding: 1.5rem; border-radius: 0.75rem; }
+    .completion-title { font-weight: bold; font-size: 1.25rem; margin-bottom: 1rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: #065fd4; }
+    .completion-text { margin-bottom: 1rem; font-size: 1.125rem; text-align: center; color: #065fd4; }
+    .confirm-section { text-align: center; }
+    .confirm-text { color: #4b5563; font-size: 1rem; margin-bottom: 1rem; }
+
+    .hidden { display: none; }
+    .fade-in { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    @media (max-width: 640px) { .alert-title { font-size: 1rem; } .main-text { font-size: 1rem; } .progress-container { height: 16rem; } .progress-percent { font-size: 1.5rem; } }
+  </style>
+</head>
+<body>
+<main style="background-color: #f7f8fa;">
+  <section class="alert-bar">
+    <div class="alert-content">
+      <h1 id="alertTitle" class="alert-title">⚠️ Attention! Your access to the application is not yet 100% complete...</h1>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="main-section fade-in" style="animation-delay: 0.2s;">
+      <div class="text-center">
+        <p id="mainText1" class="main-text">The app was recently updated to <span class="font-bold">version 2.0</span> — and all that's missing is your final activation.</p>
+        <p id="mainText2" class="main-text"><span class="font-bold">Activate now</span> and start earning up to <span class="font-bold">3× more</span>. 🚀</p>
+      </div>
+    </section>
+
+    <section class="button-section fade-in" style="animation-delay: 0.2s;">
+      <p id="instructionText" class="instruction-text">Click the button below to start the activation process.</p>
+      <div class="button-container">
+        <button id="activateBtn" class="activate-button">ACTIVATE APP 2.0</button>
+      </div>
+    </section>
+
+    <section id="progress-bar-section" class="progress-section fade-in" style="animation-delay: 0.4s;">
+      <div class="progress-container">
+        <svg id="progressCircle" class="progress-circle" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" class="progress-trail"></circle>
+          <circle id="progressPath" cx="50" cy="50" r="45" class="progress-path" style="stroke-dasharray: 282.743; stroke-dashoffset: 282.743;"></circle>
+        </svg>
+        <div class="progress-text">
+          <span id="progressValue" class="progress-percent">0%</span>
+          <span id="progressStatus" class="progress-status">Click to start</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="completionSection" class="completion-section hidden fade-in">
+      <h3 id="completionTitle" class="completion-title">✓ Activation complete!</h3>
+      <p id="completionText" class="completion-text">Your application has been updated and is ready to use.</p>
+    </section>
+
+    <section id="confirmSection" class="confirm-section hidden fade-in">
+     <!-- Digistore24 1-click upsell -->
+      <a class="btn-sim" href="https://www.checkout-ds24.com/answer/yes?template=light">YES, ACTIVATE MY APP 2.0<span class="btn-sim-warning">1-click activation - no need to enter your payment details again</span></a>
+      <a class="btn-nao-text" href="https://www.checkout-ds24.com/answer/no">No thanks, I don't want to activate version 2.0</a>
+    </section>
+  </div>
+</main>
+
+
+</body></html>
