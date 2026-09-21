@@ -53,7 +53,7 @@ section{padding:44px 0;border-bottom:1px solid #272727}
 h1,h2,h3{font-family:'Anton',Impact,sans-serif;line-height:1.08;letter-spacing:.5px;text-transform:uppercase}
 h1{font-size:clamp(36px,8.5vw,58px);margin:12px 0 16px}
 h2{font-size:clamp(28px,6.5vw,38px);margin-bottom:14px}
-h2 .hl,h1 .hl{color:var(--accent)}
+h2 .hl,h1 .hl{color:#fff;background:var(--accent);padding:0 8px;border-radius:6px;box-decoration-break:clone;-webkit-box-decoration-break:clone;display:inline}
 .sub{font-size:19px;color:#F1F1F1;margin-bottom:22px}
 p{margin-bottom:14px;color:#F1F1F1}
 p.short{max-width:60ch}
@@ -78,7 +78,8 @@ ul.check li::before{content:"✓";position:absolute;left:14px;top:13px;width:26p
 .step-num{display:inline-block;background:var(--accent);color:#fff;font-weight:900;font-size:13px;padding:4px 10px;border-radius:100px;margin-bottom:10px;letter-spacing:.5px}
 .step h3{font-size:22px;margin-bottom:8px;color:#fff}
 .module{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin:12px 0}
-.module h3{font-size:19px;color:var(--accent);margin-bottom:6px}
+.module h3{font-size:19px;color:#fff;margin-bottom:6px}
+.module h3::before{content:"▶ ";color:var(--accent);font-size:15px}
 .module p{font-size:16px;margin-bottom:6px}
 .outcome{font-size:14px;color:var(--green);font-weight:700}
 .bonus{border:1px solid var(--accent);background:linear-gradient(180deg,rgba(255,0,0,.14),rgba(255,0,0,.03));border-radius:var(--radius);padding:18px;margin:12px 0}
@@ -87,7 +88,7 @@ ul.check li::before{content:"✓";position:absolute;left:14px;top:13px;width:26p
 .stack-table{background:#181818;border:1px solid var(--border);border-radius:var(--radius);padding:18px;margin:16px 0;font-size:16px}
 .stack-table .row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px dashed #3F3F3F}
 .stack-table .row:last-child{border:0}
-.stack-table .total{font-weight:800;color:var(--accent);font-size:19px}
+.stack-table .total{font-weight:800;color:#fff;font-size:19px}
 .price-big{font-family:'Anton',sans-serif;font-size:56px;line-height:1;color:#fff;text-align:center}
 .price-strike{text-align:center;color:var(--muted);text-decoration:line-through;font-size:20px}
 .two-col{display:grid;grid-template-columns:1fr;gap:12px}
@@ -118,6 +119,11 @@ footer a{color:#F1F1F1}
 .small-note{font-size:13px;color:var(--muted)}
 .divider{height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:0 auto;max-width:200px;border:0}
 @media(min-width:700px){section{padding:60px 0}}
+/* Digistore24 badge: force dark text on white badge, isolate from dark theme */
+.ds24-badge{background:#fff;border-radius:12px;padding:10px;margin:16px auto;max-width:720px;text-align:center}
+.ds24-badge,.ds24-badge *{color:#111 !important}
+.ds24-badge a{color:#0A58CA !important;text-decoration:underline !important}
+.ds24-badge p{color:#222 !important}
 </style>
 </head>
 <body>
@@ -553,5 +559,8 @@ btn.addEventListener('click', function(){
 });
 })();
 </script>
+<!-- Begin of Digistore24 Trusted Badge Code -->
+<div class="ds24-badge"><script type="text/javascript" src="https://www.digistore24.com/trusted-badge/48090/d0Wzn4b72ONNXKn/salespage"></script></div>
+<!-- End of Digistore24 Trusted Badge Code -->
 </body>
 </html>
